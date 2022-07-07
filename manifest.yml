@@ -1,0 +1,23 @@
+name: One
+description: test
+typeOfProduct: Data
+language: None
+version: 
+type: GraphQL
+properties:
+    - tags: |
+        tag1
+        tag2
+    - policies: |
+        rate-limit
+        auth
+        key-hasura
+serviceUrl: http://www.google.com
+docker:
+    
+#docker tag will be the latest
+# - acr:
+#   - url: seadsacr.azurecr.io
+#   - repo: seads/dummyapi
+#   - user: seadsacr
+#   - password: secret

@@ -1,0 +1,101 @@
+schema {
+  query: RootQuery
+}
+
+type RootQuery {
+  exposures: [BaseExposures]
+  exposure: BaseExposures
+}
+
+type BaseExposures {
+  # Exposure CREATE_DATE
+  create_date: DateTime
+
+  # Exposure AS_OF_DATE
+  as_of_date: DateTime
+
+  # Exposure FLAG_IS_PHYS
+  flag_is_phys: String
+
+  # Exposure CATEGORY
+  category: String
+
+  # Exposure ZKEY
+  zkey: Long
+
+  # Exposure TNUM
+  tnum: String
+
+  # Exposure SIDE
+  side: Long
+
+  # Exposure MARKET_ORIG
+  market_orig: String
+
+  # Exposure COMPONENT_ORIG
+  component_orig: String
+
+  # Exposure PROFILE_START
+  profile_start: String
+
+  # Exposure PROFILE_END
+  profile_end: DateTime
+
+  # Exposure PROFILE_MONTH
+  profile_month: DateTime
+
+  # Exposure FIXING_START
+  fixing_start: DateTime
+
+  # Exposure FIXING_END
+  fixing_end: DateTime
+
+  # Exposure FIXING_MONTH
+  fixing_month: DateTime
+
+  # Exposure PRICING_START
+  pricing_start: DateTime
+
+  # Exposure PRICING_END
+  pricing_end: DateTime
+
+  # Exposure PRICING_MONTH
+  pricing_month: DateTime
+
+  # Exposure PRICING_EXPOSURE
+  pricing_exposure: Decimal
+
+  # Exposure PRICING_UNIT
+  pricing_unit: String
+
+  # Exposure COMMODITY
+  commodity: String
+
+  # Exposure COMMODITY_EXPOSURE
+  commodity_exposure: Decimal
+
+  # Exposure COMMODITY_UNIT
+  commodity_unit: String
+
+  # Exposure EQUIVALENT_EXPOSURE
+  equivalent_exposure: Long
+
+  # Exposure EQUIVALENT_UNIT
+  equivalent_unit: String
+
+  # Exposure MARKET
+  market: String
+
+  # Exposure COMPONENT
+  component: String
+
+  # Exposure PRODUCT_MAP
+  product_map: String
+}
+
+# The `DateTime` scalar type represents a date and time. `DateTime` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard.
+scalar DateTime
+
+scalar Long
+
+scalar Decimal
