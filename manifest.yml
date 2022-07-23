@@ -1,0 +1,22 @@
+---
+name: TEST
+description: |
+    hi
+owner: 
+typeOfProduct: Data
+language: None
+version: 1.0.0
+type: GraphQL
+keycloak:
+    - clientId: clientid
+    - roles: |
+        admin
+properties:
+    - tags: |
+        
+    - policies: |
+        rate-limit
+        auth
+serviceUrl: http://www.google.pt
+docker:
+    
